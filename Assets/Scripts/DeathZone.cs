@@ -20,9 +20,11 @@ public class DeathZone : MonoBehaviour
     }
     private IEnumerator ReplacePlayer(Collider2D collision)
     {
+        PlayerMovement.instance.enabled = false;
         Debug.Log("Je meeeeeeeeeeurs");
         fadeSystem.SetTrigger("FadeIn");
         yield return new WaitForSeconds(2f);
         collision.transform.position = playerSpawn.position;
+        PlayerMovement.instance.enabled = true;
     }
 }
