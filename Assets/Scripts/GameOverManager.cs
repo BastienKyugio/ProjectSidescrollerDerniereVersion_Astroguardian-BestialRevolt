@@ -37,6 +37,12 @@ public class GameOverManager : MonoBehaviour
         PlayerHealth.instance.Respawn();
         gameOverUI.SetActive(false);
     }
+    public void MainMenu()
+    {
+        DontDestroyOnLoadScene.instance.RemoveFromDontDestroyOnLoad();
+        SceneManager.LoadScene("MainMenu");
+
+    }
     
 
     public void QuitButttom()
