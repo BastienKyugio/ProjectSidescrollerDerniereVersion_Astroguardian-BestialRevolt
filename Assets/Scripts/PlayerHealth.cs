@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
     public SpriteRenderer graphics;
     public HealthBar healthBar;
-
+    public CapsuleCollider2D monPersoSpawn;
 
 
     public static PlayerHealth instance;
@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Il y a plus d'une instance de PlayerHealth dans la scène");
+            Debug.LogWarning("Il y a plus d'une instance de PlayerHealth dans la scï¿½ne");
             return;
         }
 
@@ -82,6 +82,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
         PlayerMovement.instance.rb.velocity = Vector3.zero;
         PlayerMovement.instance.playercollider.enabled = false;
+        GameOverManager.instance.OnPlayerDeath();
     }
 
     public void Respawn()
@@ -92,6 +93,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.playercollider.enabled = true;
         currentHealth = maxHealth;
         healthBar.SetHealth(currentHealth);
+        PlayerMovement.instance.playercollider.transform.position = Spawn.instance.transform.position;
     }
 
     public IEnumerator InvincibilityFlash()

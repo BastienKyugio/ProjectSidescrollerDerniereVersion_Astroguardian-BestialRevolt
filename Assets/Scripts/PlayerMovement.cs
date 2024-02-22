@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Il y a plus d'une instance de PlayerMovement dans la scène");
+            Debug.LogWarning("Il y a plus d'une instance de PlayerMovement dans la scï¿½ne");
             return;
         }
         instance = this;
@@ -37,8 +37,9 @@ public class PlayerMovement : MonoBehaviour
 
 
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+        
 
-        if (Input.GetButtonDown("Jump") && isGrounded) // si la spacebar est pressé et qu'on est au sol alors l'état de l'objet passe a "est en train de sauter"
+        if (Input.GetButtonDown("Jump") && isGrounded) // si la spacebar est pressï¿½ et qu'on est au sol alors l'ï¿½tat de l'objet passe a "est en train de sauter"
         {
             isJumping = true;
         }

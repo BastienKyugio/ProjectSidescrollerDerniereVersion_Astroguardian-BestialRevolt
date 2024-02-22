@@ -1,16 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSpawn : MonoBehaviour
+public class Spawn : MonoBehaviour
 {
 
     [SerializeField]
     CapsuleCollider2D monPersoSpawn;
-    public static PlayerSpawn instance;
+    public static Spawn instance;
         private void Awake()
     {
         if (instance != null)
         {
-            Debug.LogWarning("Il y a plus d'une instance de PlayerSpawn dans la scène");
+            Debug.LogWarning("Il y a plus d'une instance de Spawn dans la scène");
             return;
         }
 
