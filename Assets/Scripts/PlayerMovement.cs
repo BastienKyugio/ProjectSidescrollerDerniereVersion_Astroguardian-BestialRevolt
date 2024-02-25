@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     [HideInInspector]
     public bool isClimbing;
-    private bool recupEpee;
+    [HideInInspector]
+    public bool recupEpee;
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask collisionLayers;
@@ -56,13 +57,19 @@ public class PlayerMovement : MonoBehaviour
         Flip(rb.velocity.x);
 
         float characterVelocity = Mathf.Abs(rb.velocity.x);
-        animator.SetFloat("Speed", characterVelocity);
 
+        animator.SetFloat("Speed", characterVelocity);
+ 
+        if(recupEpee)
+        {
+            animator.SetTrigger("Epee");
+        }
     }
     void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayers);
         MovePlayer(horizontalMovement, verticalMovement);
+        
     }
     void MovePlayer(float _horizontalMovement,  float _verticalMovement)
     {

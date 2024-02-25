@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 9062590716895754924}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.31965, y: 7.4, z: -0.08141454}
+  m_LocalPosition: {x: 0.95, y: 2.8748024, z: -0.08141454}
   m_LocalScale: {x: 2.9940116, y: 2.9940116, z: 2.9940116}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -133,7 +133,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 500
+  climbSpeed: 0
   jumpForce: 200
+  isClimbing: 0
+  recupEpee: 0
   groundCheck: {fileID: 4730894850658714045}
   groundCheckRadius: 0.2
   collisionLayers:

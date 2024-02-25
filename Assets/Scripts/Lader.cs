@@ -6,27 +6,24 @@ using UnityEngine.UI;
 public class Lader : MonoBehaviour
 {
     private bool isInRange;
-    private PlayerMovement playerMovement;
     public Text interactUI;
-    // Start is called before the first frame update
     void Awake()
     {
-        playerMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         interactUI = GameObject.FindGameObjectWithTag("InteractUI").GetComponent<Text>();
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-        if(playerMovement.isClimbing && Input.GetKeyDown(KeyCode.E) && isInRange)
+        if(PlayerMovement.instance.isClimbing && Input.GetKeyDown(KeyCode.E) && isInRange)
         {
-            playerMovement.isClimbing = false;
+            PlayerMovement.instance.isClimbing = false;
             return;
         }
 
         if(isInRange && Input.GetKeyDown(KeyCode.E))
         {
-            playerMovement.isClimbing = true;
+            PlayerMovement.instance.isClimbing = true;
         }
 
     }
@@ -43,8 +40,8 @@ public class Lader : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             isInRange = false;
-            playerMovement.isClimbing = false;
-                        interactUI.enabled = false;
+            PlayerMovement.instance.isClimbing = false;
+            interactUI.enabled = false;
 
         }
     }
