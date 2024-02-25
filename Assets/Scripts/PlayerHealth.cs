@@ -93,7 +93,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.playercollider.enabled = true;
         currentHealth = maxHealth;
         healthBar.SetHealth(currentHealth);
-        PlayerMovement.instance.playercollider.transform.position = Spawn.instance.transform.position;
+        PlayerMovement.instance.playercollider.transform.position = CurrentSceneManager.instance.respawnPoint;
     }
 
     public IEnumerator InvincibilityFlash()

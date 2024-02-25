@@ -178,6 +178,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Credit
       objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5782113817814556582, guid: 3c4f105dbb753ac44978c5d925bfefd3, type: 3}
     - target: {fileID: 7996715726922654974, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -712,6 +720,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: MiddlePart
       objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5782113817814556582, guid: 3c4f105dbb753ac44978c5d925bfefd3, type: 3}
     - target: {fileID: 7996715726922654974, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -905,6 +921,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: HardcorePart
       objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5782113817814556582, guid: 3c4f105dbb753ac44978c5d925bfefd3, type: 3}
     - target: {fileID: 7996715726922654974, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1204,6 +1228,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: BossPart
       objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5782113817814556582, guid: 3c4f105dbb753ac44978c5d925bfefd3, type: 3}
     - target: {fileID: 7996715726922654974, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1340,15 +1372,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.057511445, g: 0.020024918, b: 0.2830189, a: 0}
+  m_Color: {r: 0.057511445, g: 0.020024918, b: 0.62352943, a: 0.09803922}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -5782113817814556582, guid: 3c4f105dbb753ac44978c5d925bfefd3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1381,6 +1413,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1369322644}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7862736055619875649, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5782113817814556582, guid: 3c4f105dbb753ac44978c5d925bfefd3, type: 3}
     - target: {fileID: 7996715726922654974, guid: 134b9db6a5d1bde4996411f9487aecee, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

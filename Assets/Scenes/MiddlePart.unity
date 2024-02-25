@@ -20361,6 +20361,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2109281083}
   m_SourcePrefab: {fileID: 100100000, guid: 30b02f296ea22804d80e3d96d769f80f, type: 3}
+--- !u!70 &2109281078 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6269899193963073465, guid: 30b02f296ea22804d80e3d96d769f80f, type: 3}
+  m_PrefabInstance: {fileID: 2109281077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2109281079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8603687744127852109, guid: 30b02f296ea22804d80e3d96d769f80f, type: 3}
@@ -20400,7 +20405,7 @@ MonoBehaviour:
   isInvincible: 0
   graphics: {fileID: 2109281082}
   healthBar: {fileID: 4939479632388651647}
-  monPersoSpawn: {fileID: 0}
+  monPersoSpawn: {fileID: 2109281078}
 --- !u!1001 &2119825414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20653,18 +20658,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1892442214}
-    - target: {fileID: 467609946642738980, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadMainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 3492321365943250090, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1892442215}
-    - target: {fileID: 3492321365943250090, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RetryButton
-      objectReference: {fileID: 0}
     - target: {fileID: 4354254644953371701, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -20757,18 +20754,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1892442214}
-    - target: {fileID: 5376050536568151181, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Resume
-      objectReference: {fileID: 0}
     - target: {fileID: 5734819719034284364, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1892442215}
-    - target: {fileID: 5734819719034284364, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MainMenu
-      objectReference: {fileID: 0}
     - target: {fileID: 6163661220003817308, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -20777,10 +20766,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1892442215}
-    - target: {fileID: 9047539688520691137, guid: edcc13b77c0617e4b8579974ec361a2b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitButttom
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
